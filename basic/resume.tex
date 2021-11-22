@@ -19,49 +19,22 @@
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{John}{Doe}
-\title{Résumé title}                               % optional, remove / comment the line if not wanted
-\born{4 July 1776}                                 % optional, remove / comment the line if not wanted
-\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\phone[fixed]{+2~(345)~678~901}
-\phone[fax]{+3~(456)~789~012}
-\email{john@doe.org}                               % optional, remove / comment the line if not wanted
+\name{Gabriel}{Anderson}
+\title{Functional Frontend Developer}              % optional, remove / comment the line if not wanted
+\born{13 February 1992}                            % optional, remove / comment the line if not wanted
+\phone[mobile]{+1~(206)~503~3994}                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{gabe.anderson.jobs@gmail.com}               % optional, remove / comment the line if not wanted
 \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 
 % Social icons
-\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
-\social[xing]{john_doe}                           % optional, remove / comment the line if not wanted
-\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
-\social[stackoverflow]{0000000/johndoe}            % optional, remove / comment the line if not wanted
-\social[bitbucket]{jdoe}                           % optional, remove / comment the line if not wanted
-\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
-\social[orcid]{0000-0000-000-000}                  % optional, remove / comment the line if not wanted
-\social[researchgate]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[researcherid]{jdoe}                        % optional, remove / comment the line if not wanted
-\social[telegram]{jdoe}                            % optional, remove / comment the line if not wanted
-\social[whatsapp]{12345678901}                     % optional, remove / comment the line if not wanted
-\social[signal]{12345678901}                       % optional, remove / comment the line if not wanted
-\social[matrix]{@johndoe:matrix.org}               % optional, remove / comment the line if not wanted
-\social[googlescholar]{googlescholarid}            % optional, remove / comment the line if not wanted
-
+% \social[linkedin]{john.doe}                      % optional, remove / comment the line if not wanted
+\social[github]{andgate}                           % optional, remove / comment the line if not wanted
+\social[gitlab]{andgate}                           % optional, remove / comment the line if not wanted
 
 \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{profile.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{profile.jpg}                   % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
-% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -73,17 +46,22 @@
 \begin{multicols}{2}
   \setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}
 
-  \section{Education}
-  \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
-  \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+  \section{Skills}
 
-  \section{Master thesis}
-  \cvitem{title}{\emph{Title}}
-  \cvitem{supervisors}{Supervisors}
-  \cvitem{description}{Short thesis abstract}
+  \subsection{Languages}
+  \cvitemwithcomment{Language 1}{Skill level}{Comment}
+  \cvitemwithcomment{Language 2}{Skill level}{Comment}
+  \cvitemwithcomment{Language 3}{Skill level}{Comment}
+  \cvitemwithcomment{Language 4}{Skill level}{Comment}
+
+  \subsection{Computer skills}
+  \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+  \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+  \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+  \columnbreak
 
   \section{Experience}
-  \subsection{Vocational}
   \cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}
     Detailed achievements:
     \begin{itemize}
@@ -103,110 +81,69 @@
       \item Achievement 4
     \end{itemize}}
   \cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2\newline{}Description line 3}
-  \subsection{Miscellaneous}
-  \cventry{year--year}{Job title}{Employer}{City}{}{Description}
 
-  \section{Languages}
-  \cvitemwithcomment{Language 1}{Skill level}{Comment}
-  \cvitemwithcomment{Language 2}{Skill level}{Comment}
-  \cvitemwithcomment{Language 3}{Skill level}{Comment}
-  \cvitemwithcomment{Language 4}{Skill level}{Comment}
-
-  \section{Computer skills}
-  \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-  \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-  \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-
-  \section{Skill matrix}
-  \cvitem{Skill matrix}{Alternatively, provide a skill matrix to show off your skills}
-  %% Skill matrix as an alternative to rate one's skills, computer or other. 
-
-  %% Adjusts width of skill matrix columns. 
-  %% Usage \setcvskillcolumns[<width>][<factor>][<exp_width>]
-  %% <width>, <exp_width> should be lengths smaller than \textwidth, <factor> needs to be between 0 and 1.
-  %% Examples:
-  % \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
-  % \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
-  % \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
-  % \setcvskillcolumns[][0.45][\widthof{``Year''}]%
-  % \setcvskillcolumns[\widthof{``Languag''}][0.48][]
-  % \setcvskillcolumns[\widthof{``Languag''}]%
-
-  %% Adjusts width of legend columns. Usage \setcvskilllegendcolumns[<width>][<factor>]
-  %% <factor> needs to be between 0 and 1. <width> should be a length smaller than \textwidth
-  %% Examples:
-  % \setcvskilllegendcolumns[][0.45]
-  % \setcvskilllegendcolumns[\widthof{``Legend''}][0.45]
-  % \setcvskilllegendcolumns[0ex][0.46]% this is usefull for the banking style
-
-  %% Add a legend if you are using \cvskill{<1-5>} command or \cvskillentry
-  %% Usage \cvskilllegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
-  % \cvskilllegend % insert default legend without lines
-  \cvskilllegend*[1em]{}% adjust post spacing
-  % \cvskilllegend*{Legend}%  Alternatively add a description string
-  %% adjust the legend entries for other languages, here German
-  % \cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
-
-  %% Alternative legend style with the first three skill levels in one column
-  %% Usage \cvskillplainlegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
-  % \setcvskilllegendcolumns[][0.6]%  works for classic, casual, banking
-  % \setcvskilllegendcolumns[][0.55]%  works better for oldstyle and fancy
-  % \cvskillplainlegend{}
-  % \cvskillplainlegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte/Guru]{Legende}
-
-  %% Add a head of the skill matrix table with descriptions.
-  %% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
-  \cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
-  %% Adjust head of the skill matrix for other languages
-  % \cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
-
-  %% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
-  %% Example usages:
-  \cvskillentry*{Language:}{3}{Python}{2}{I'm so experienced in Python and have realised a million projects. At least.}
-  \cvskillentry{}{2}{Lilypond}{14}{So much sheet music! Man, I'm the best!}
-  \cvskillentry{}{3}{\LaTeX}{14}{Clearly I rock at \LaTeX}
-  \cvskillentry*{OS:}{3}{Linux}{2}{I only use Archlinux btw}% notice the use of the starred command and the optional 
-  \cvskillentry*[1em]{Methods}{4}{SCRUM}{8}{SCRUM master for 5 years}
-  %% \cvskill{<0-5>} command
-  % \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
+  \section{Education}
+  \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 can be left empty
+  \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 
   \section{Interests}
   \cvitem{hobby 1}{Description}
   \cvitem{hobby 2}{Description}
   \cvitem{hobby 3}{Description}
-
-  \section{Extra 1}
-  \cvlistitem{Item 1}
-  \cvlistitem{Item 2}
-  \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-
-  \section{Extra 2}
-  \cvlistdoubleitem{Item 1}{Item 4}
-  \cvlistdoubleitem{Item 2}{Item 5\cite{book2}}
-  \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-
-  \section{References}
-  \begin{cvcolumns}
-    \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-    \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-    \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-  \end{cvcolumns}
-
-  % Publications from a BibTeX file without multibib
-  %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-  %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-  \nocite{*}
-  \bibliographystyle{plain}
-  \bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-  % Publications from a BibTeX file using the multibib package
-  %\section{Publications}
-  %\nocitebook{book1,book2}
-  %\bibliographystylebook{plain}
-  %\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-  %\nocitemisc{misc1,misc2,misc3}
-  %\bibliographystylemisc{plain}
-  %\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
 \end{multicols}
+
+\section{Skill matrix}
+\cvitem{Skill matrix}{Alternatively, provide a skill matrix to show off your skills}
+%% Skill matrix as an alternative to rate one's skills, computer or other. 
+
+%% Adjusts width of skill matrix columns. 
+%% Usage \setcvskillcolumns[<width>][<factor>][<exp_width>]
+%% <width>, <exp_width> should be lengths smaller than \textwidth, <factor> needs to be between 0 and 1.
+%% Examples:
+% \setcvskillcolumns[5em][][]%    adjust first column. Same as \setcvskillcolumns[5em]
+% \setcvskillcolumns[][0.45][]%   adjust third (skill) column. Same as \setcvskillcolumns[][0.45]
+% \setcvskillcolumns[][][\widthof{``Year''}]%     adjust fourth (years) column.
+% \setcvskillcolumns[][0.45][\widthof{``Year''}]%
+% \setcvskillcolumns[\widthof{``Languag''}][0.48][]
+% \setcvskillcolumns[\widthof{``Languag''}]%
+
+%% Adjusts width of legend columns. Usage \setcvskilllegendcolumns[<width>][<factor>]
+%% <factor> needs to be between 0 and 1. <width> should be a length smaller than \textwidth
+%% Examples:
+% \setcvskilllegendcolumns[][0.45]
+% \setcvskilllegendcolumns[\widthof{``Legend''}][0.45]
+% \setcvskilllegendcolumns[0ex][0.46]% this is usefull for the banking style
+
+%% Add a legend if you are using \cvskill{<1-5>} command or \cvskillentry
+%% Usage \cvskilllegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
+% \cvskilllegend % insert default legend without lines
+\cvskilllegend*[1em]{}% adjust post spacing
+% \cvskilllegend*{Legend}%  Alternatively add a description string
+%% adjust the legend entries for other languages, here German
+% \cvskilllegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte\,/\,Spezialist]{Legende}
+
+%% Alternative legend style with the first three skill levels in one column
+%% Usage \cvskillplainlegend[*][<post_padding>][<first_level>][<second_level>][<third_level>][<fourth_level>][<fifth_level>]{<name>}
+% \setcvskilllegendcolumns[][0.6]%  works for classic, casual, banking
+% \setcvskilllegendcolumns[][0.55]%  works better for oldstyle and fancy
+% \cvskillplainlegend{}
+% \cvskillplainlegend[0.2em][Grundkenntnisse][Grundkenntnisse und eigene Erfahrung in Projekten][Umfangreiche Erfahrung in Projekten][Vertiefte Expertenkenntnisse][Experte/Guru]{Legende}
+
+%% Add a head of the skill matrix table with descriptions.
+%% Usage \cvskillhead[<post_padding>][<Level>][<Skill>][<Years>][<Comment>]%
+\cvskillhead[-0.1em]%   this inserts the standard legend in english and adjust padding
+%% Adjust head of the skill matrix for other languages
+% \cvskillhead[0.25em][Level][F\"ahigkeit][Jahre][Bemerkung]
+
+%% \cvskillentry[*][<post_padding>]{<skill_cathegory>}{<0-5>}{<skill_name>}{<years_of_experience>}{<comment>}% 
+%% Example usages:
+\cvskillentry*{Language:}{3}{Python}{2}{I'm so experienced in Python and have realised a million projects. At least.}
+\cvskillentry{}{2}{Lilypond}{14}{So much sheet music! Man, I'm the best!}
+\cvskillentry{}{3}{\LaTeX}{14}{Clearly I rock at \LaTeX}
+\cvskillentry*{OS:}{3}{Linux}{2}{I only use Archlinux btw}% notice the use of the starred command and the optional 
+\cvskillentry*[1em]{Methods}{4}{SCRUM}{8}{SCRUM master for 5 years}
+%% \cvskill{<0-5>} command
+% \cvitem{\textbackslash{cvskill}:}{Skills can be visually expressed by the \textbackslash{cvskill} command, e.g. \cvskill{2}}
+
+
 \end{document}
