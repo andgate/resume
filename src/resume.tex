@@ -1,14 +1,15 @@
-\documentclass[a4]{article}
+\documentclass[10pt, a4paper]{article}
 
-\usepackage[a4paper, total={7in, 9in}]{geometry}
-\usepackage{lipsum}                                % for dummy text
+\usepackage[a4paper, total={7in, 8.5in}]{geometry}
+\usepackage{lipsum}                                 % for dummy text
 \usepackage{graphicx}                               % for icons
-\usepackage{fancyhdr}
-\usepackage{hyperref}
-\usepackage{titlesec}
+\usepackage{fancyhdr}                               % for the header
+\usepackage{hyperref}                               % To include hyperlinks
+\usepackage{titlesec}                               % for customizing section formatting
+\usepackage{adjustbox}                              % for customizing section formatting
 
 \titleformat{\section}
-  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+  {\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 % personal data
 \newcommand{\fullname}{Gabriel Anderson}
@@ -33,8 +34,8 @@
   \phone
 }
 \fancyhead[C]{
-  \large{\textbf{\fullname}} \\
-  \homepage
+  \Large{\textbf{\fullname}} \\
+  \large{\homepage}
 }
 \fancyhead[R]{
   \github \\
@@ -50,47 +51,134 @@
 %-----       resume       ---------------------------------------------------------
 
 \section*{Objective}
+\vspace{-0.1in}
 Get a job!
+\vspace{-10pt}
 
 \section*{Education}
+\vspace{-0.1in}
 Central Washington University, Ellensburg, WA \\
 Bachelor of Computer Science, June 2019 \\
 Concentration in Graph Algorithms and Graphics \\
 Minors in Mathematics \\
 G.P.A. 3.7
+\vspace{-10pt}
 
 \section*{Experience}
-\vspace{-0.1in}
-\begin{tabbing}
-  \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-  {\bf Software Developer} \>SMART Technologies \>August 2019-Feb 2021\\
-  \>Seattle, WA
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-\lipsum[1][1-5]
 
+\noindent
+{
+  \makebox[0pt][l]{\bf\large Intern Software Developer}
+  \hfill
+  \makebox[0pt][c]{NRS Systems, Yakima, WA}
+  \hfill
+  \makebox[0pt][r]{Winter, 2018}
+}
 \vspace{-0.1in}
-\begin{tabbing}
-  \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-  {\bf Research Assistant} \>Central Washington University \>Spring 2019\\
-  \>Ellensburg, WA
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-\lipsum[1][1-5]
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
 
+\noindent
+{
+  \makebox[0pt][l]{\bf\large Research Assistant}
+  \hfill
+  \makebox[0pt][c]{Central Washington University, Ellensburg, WA}
+  \hfill
+  \makebox[0pt][r]{Spring 2019}
+}
 \vspace{-0.1in}
-\begin{tabbing}
-  \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-  {\bf Intern Software Developer} \>NRS Systems \>Winter, 2018\\
-  \>Yakima, WA
-\end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-\lipsum[1][1-3]
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
+
+\noindent
+{
+  \makebox[0pt][l]{\bf\large Software Developer}
+  \hfill
+  \makebox[0pt][c]{SMART Technologies, Seattle, WA}
+  \hfill
+  \makebox[0pt][r]{August 2019-Feb 2021}
+}
+\vspace{-0.1in}
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
 
 \section*{Projects}
-MNIST Demo \\
-Mandelbulb Explorer \\
-Lambda Calculus Interpreter
+\noindent
+{
+  \makebox[0pt][l]{\bf\large MNIST Demo}
+  \hfill
+  \makebox[0pt][r]{https://andgate.github.io/mnist}
+}
+\vspace{-0.1in}
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
 
+\noindent
+{
+  \makebox[0pt][l]{\bf\large Mandelbulb Explorer}
+  \hfill
+  \makebox[0pt][r]{https://andgate.github.io/mandelbulb}
+}
+\vspace{-0.1in}
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
+
+\noindent
+{
+  \makebox[0pt][l]{\bf\large Lambda Calulus Interpreter}
+  \hfill
+  \makebox[0pt][r]{https://andgate.github.io/lambda}
+}
+\vspace{-0.1in}
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
+
+\vspace{-10pt}
 
 \section*{Skills}
-Extensive knowledge of hardware, software, programming languages, algorithms, and software development ecosystems.
+\begin{itemize}
+  \item \lipsum[1][1]
+        \vspace{-0.1in}
+  \item \lipsum[1][2]
+        \vspace{-0.1in}
+  \item \lipsum[1][3]
+        \vspace{-0.05in}
+\end{itemize}
 
 \end{document}
