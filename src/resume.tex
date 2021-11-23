@@ -1,42 +1,65 @@
-\documentclass{res}
+\documentclass[a4]{article}
 
+\usepackage[a4paper, total={7in, 9in}]{geometry}
 \usepackage{lipsum}                                % for dummy text
+\usepackage{graphicx}                               % for icons
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 % personal data
 \newcommand{\fullname}{Gabriel Anderson}
-\newcommand{\jobtitle}{Functional Frontend Developer}              % optional, remove / comment the line if not wanted
-\newcommand{\phone}{+1~(206)~503~3994}                  % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\newcommand{\email}{gabe.anderson.jobs@gmail.com}               % optional, remove / comment the line if not wanted
-\newcommand{\homepage}{andgate.github.io}                       % optional, remove / comment the line if not wanted
+\newcommand{\jobtitle}{Functional Frontend Developer}
+\newcommand{\phone}{+1~(206)~503~3994}                        
+\newcommand{\email}{gabe.anderson.jobs@gmail.com}
+\newcommand{\homepage}{\href{https://andgate.github.io}{andgate.github.io}}
 
-% Social
-\newcommand{\linkedin}{andgate}                      % optional, remove / comment the line if not wanted
-\newcommand{\github}{andgate}                           % optional, remove / comment the line if not wanted
+% Social media icons
+\newcommand{\githubicon}{\includegraphics[width=10pt,height=10pt]{GitHub-Mark-32px.png}}
+\newcommand{\linkedinicon}{\includegraphics[width=10pt,height=9pt]{LI-In-Bug.png}}
 
-% \newcommand{\quote}{Some quote}                                 % optional, remove / comment the line if not wanted
+% Social media links
+\newcommand{\linkedin}{\href{https://www.linkedin.com/in/andgate}{linkedin.com/in/andgate \linkedinicon}}
+\newcommand{\github}{\href{https://www.github.com/andgate}{github.com/andgate \githubicon}}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{
+  \email \\
+  \phone
+}
+\fancyhead[C]{
+  \large{\textbf{\fullname}} \\
+  \homepage
+}
+\fancyhead[R]{
+  \github \\
+  \linkedin
+}
+\renewcommand{\headrulewidth}{0pt}
 
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 
-{\large \makebox[0pt][l]{gabe.anderson.jobs@gmail.com} \hfill
-\makebox[0pt][c]{\fullname} \hfill
-\makebox[0pt][r]{\today}\par}
-
 %-----       resume       ---------------------------------------------------------
 
-\section{Objective}
+\section*{Objective}
 Get a job!
 
-\section{Education}
+\section*{Education}
 Central Washington University, Ellensburg, WA \\
 Bachelor of Computer Science, June 2019 \\
 Concentration in Graph Algorithms and Graphics \\
 Minors in Mathematics \\
 G.P.A. 3.7
 
-\section{Experience}
+\section*{Experience}
 \vspace{-0.1in}
 \begin{tabbing}
   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
@@ -61,13 +84,13 @@ G.P.A. 3.7
 \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
 \lipsum[1][1-3]
 
-\section{Projects}
+\section*{Projects}
 MNIST Demo \\
 Mandelbulb Explorer \\
 Lambda Calculus Interpreter
 
 
-\section{Skills}
+\section*{Skills}
 Extensive knowledge of hardware, software, programming languages, algorithms, and software development ecosystems.
 
 \end{document}
