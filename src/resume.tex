@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 
-\usepackage[a4paper, total={7in, 8.5in}]{geometry}
+\usepackage[a4paper, total={7in, 10in}, bottom=0.8in]{geometry}
 \usepackage{lipsum}                                 % for dummy text
 \usepackage{graphicx}                               % for icons
 \usepackage{fancyhdr}                               % for the header
@@ -10,6 +10,8 @@
 
 \titleformat{\section}
   {\normalfont\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+
+\setlength{\headheight}{28.20003pt}
 
 % personal data
 \newcommand{\fullname}{Gabriel Anderson}
@@ -58,25 +60,42 @@
 
 \section*{Objective}
 \vspace{-0.05in}
-\hspace*{0.1in}
-\begin{minipage}{.95\textwidth}
-  Highly skilled developer with 2 years of industry experience and 15 years of independent practice, seeking a frontend developer role where I can apply my ideation, relator, and strategic strengths, alongside my broad range of technical skills, to build awesome software that makes a difference in the world.
+\hspace*{0.04in}
+\begin{minipage}{0.97\textwidth}
+  Highly skilled developer with 2 years of industry experience and 15 years of
+  independent practice, seeking a frontend developer role where I can apply my
+  ideation, relator, and strategic strengths, alongside my broad range of technical
+  skills, to build awesome software that makes a difference in the world.
 \end{minipage}
 \vspace{-0.15in}
 
 \section*{Education}
 \vspace{-0.05in}
-\hspace*{0.1in}
-\begin{minipage}{.8\textwidth}
-  Central Washington University, Ellensburg, WA \\
-  Bachelor of Computer Science, June 2019 \\
-  Concentration in Graph Algorithms and Graphics \\
-  Minors in Mathematics \\
-  G.P.A. 3.7
-\end{minipage}
-\vspace{-0.1in}
+
+\noindent
+{
+  \makebox[0pt][l]{\bf\large Central Washington University}
+  \hfill
+  \makebox[0pt][r]{Ellensburg, WA}
+}
+
+\noindent
+{
+  \makebox[0pt][l]{\it Bachelor of Science in Computer Science, Minor in Mathematics}
+  \hfill
+  \makebox[0pt][r]{\it Sept. 2017 - Mar. 2019}
+}
+
+\noindent
+{
+  \makebox[0pt][l]{\it Graduated Manga Cum Laude}
+  \hfill
+  \makebox[0pt][r]{\it 3.7 GPA}
+}
+\vspace{-0.15in}
 
 \section*{Experience}
+\vspace{-0.05in}
 
 % Each sections should highlight:
 %   - Skill that you have
@@ -85,58 +104,84 @@
 
 \noindent
 {
-  \makebox[0pt][l]{\bf\large Intern Software Developer}
+  \makebox[0pt][l]{\bf\large SMART Technologies}
   \hfill
-  \makebox[0pt][c]{NRS Systems, Yakima, WA}
-  \hfill
-  \makebox[0pt][r]{Winter, 2018}
+  \makebox[0pt][r]{Seattle, WA}
 }
-\vspace{-0.1in}
+
+\noindent
+{
+  \makebox[0pt][l]{\it Frontend Software Developer}
+  \hfill
+  \makebox[0pt][r]{\it Aug. 2019 - Feb. 2021}
+}
+\vspace{-0.08in}
 \begin{itemize}
-  \item Developed a Google Calender widget in javascript, which accessed user data via Google's OAuth service.
+  \item Designed and developed an Android overlay widget manager, written in Kotlin with an MVVM architecture.
         \vspace{-0.1in}
-  \item Team collaboration which consisted of bi-weekly meetings and pair programming assignments.
+  \item Decomposed a bloated widget framework into a set of packages as NPM monorepo using Lerna, to enable students to use the framework.
         \vspace{-0.1in}
-  \item Applied functional programming to process reoccuring event rules (rrules) in a clean, understandable fashion.
+  \item Built a iOS-style calculator widget in React, as part of a group activity to develop widgets.
+        \vspace{-0.1in}
+  \item Worked on a large frontend team for SMART Learning Suite Online.
+        \vspace{-0.1in}
+  \item Did stuff on a large frontend team for company's main product, SMART Learning Suite Online.
+        \vspace{-0.1in}
+  \item Projects were built to company standards, using an Agile development methodology and following Clean architecture.
+        \vspace{-0.1in}
+  \item Attended daily team standups.
+        \vspace{-0.1in}
+  \item Wrote technical design documentation on Confluence.
+        \vspace{-0.1in}
+  \item Built and deployed projects using TeamCity, working closely with DevOps team to ensure projects were integrated into a large final product.
 \end{itemize}
 \vspace{-0.05in}
 
 \noindent
 {
-  \makebox[0pt][l]{\bf\large Research Assistant}
+  \makebox[0pt][l]{\bf\large Central Washington University}
   \hfill
-  \makebox[0pt][c]{Central Washington University, Ellensburg, WA}
-  \hfill
-  \makebox[0pt][r]{Spring 2019}
+  \makebox[0pt][r]{Ellensburg, WA}
 }
-\vspace{-0.1in}
+
+\noindent
+{
+  \makebox[0pt][l]{\it Undergraduate Directed Research}
+  \hfill
+  \makebox[0pt][r]{\it Apr. 2019 - Mar. 2019}
+}
+\vspace{-0.08in}
 \begin{itemize}
-  \item Researched graph algorithms under Dr. Arne Leitart.
+  \item Under Dr. Arne Leitart, explored theories to develop more a efficient, parameterized
+        approximation algorithm for the (Connected) {\it r}-Domination problem for unweighted
+        and undirected graphs.
         \vspace{-0.1in}
-  \item Contributed via directed research in the search to find a more efficient k-dominating set approximation algorithm..
-        \vspace{-0.1in}
-  \item Peformed TA duties for a specialized graph algorithms course, such as grading assignments, helping students during lab, and responding to emails.
+  \item New theories were explored on whiteboard and paper exclusively.
 \end{itemize}
 \vspace{-0.05in}
 
 \noindent
 {
-  \makebox[0pt][l]{\bf\large Software Developer}
+  \makebox[0pt][l]{\bf\large Central Washington University}
   \hfill
-  \makebox[0pt][c]{SMART Technologies, Seattle, WA}
-  \hfill
-  \makebox[0pt][r]{August 2019-Feb 2021}
+  \makebox[0pt][r]{Jan. 2019 - Mar. 2019}
 }
-\vspace{-0.1in}
+
+\noindent
+{
+  \makebox[0pt][l]{\it Teaching Assistant}
+  \hfill
+  \makebox[0pt][r]{\it Ellensburg, WA}
+}
+\vspace{-0.08in}
 \begin{itemize}
-  \item Agile, SOLID, Azure Devops
+  \item Graded homework assignments for {\it Algorithm Analysis}, taught by Dr. Boris Kovalerchuk.
         \vspace{-0.1in}
-  \item Android application, c++/java/kotlin, MVVM
+  \item Graded homework assignments for {\it Introduction to Graph Algorithms}, taught by Dr. Arne Leitart.
         \vspace{-0.1in}
-  \item Webapps, nodejs, react, vuejs
-        \vspace{-0.1in}
-  \item Team had mix functional and object-oriented approach
+  \item Assisted students during computer science lab hours for both classes.
 \end{itemize}
+
 \vspace{-0.2in}
 
 \section*{Projects}
@@ -181,11 +226,19 @@
 
 \section*{Skills}
 \begin{itemize}
-  \item Languages: Java, Kotlin, C, C++, C\#, Python, Haskell, Swift, Typescript, Javscript
+  \item {\bf Languages:}
         \vspace{-0.1in}
-  \item Tools: git, npm, webpack, firebase, docker
+        \begin{itemize}
+          \item[$\circ$] Proficient: Javascript, Typescript, Java, Kotlin, C, C++, Haskell
+            \vspace{-0.05in}
+          \item[$\circ$] Familiar: C\#, Swift, Python
+        \end{itemize}
+        \vspace{-0.15in}
+  \item {\bf Frameworks:} Node, React, Vue, Solid, kotlin-flow
         \vspace{-0.1in}
-  \item Frameworks: React, Vue, Solid, kotlin-flow, pytorch
+  \item {\bf Methodologies:} Scrum, Clean, OOP, FP
+        \vspace{-0.1in}
+  \item {\bf Technologies:} git, npm, webpack, babel, docker, lerna, Bash, Emacs, VSCode
 \end{itemize}
 
 \end{document}
