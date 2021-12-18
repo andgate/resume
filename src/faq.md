@@ -38,6 +38,12 @@
 
 ### How was your hackathon experience at SMART Technologies?
 
+## Work Experience Questions
+
+### How was developing with Lerna? What's a monorepo?
+
+### How was developing an android overlay?
+
 ## Project Question
 
 ### Tell me more about Alonzo.
@@ -49,3 +55,4 @@
 ## Programming Language Questions
 
 ### What is your experience programming with Haskell?
+
