@@ -1,3 +1,3 @@
 {
-  "latex-workshop.latex.outDir": "%DIR%/../docs"
+  "latex-workshop.latex.outDir": "%DIR%/../latex-build"
 }
