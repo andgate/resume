@@ -5,7 +5,8 @@
   "description": "Andgate's resume website.",
   "scripts": {
     "start": "parcel src/index.html --dist-dir docs --no-source-maps",
-    "build": "parcel build src/index.html --dist-dir docs --no-source-maps"
+    "build": "npm run copy:pdf && parcel build src/index.html --dist-dir docs --no-source-maps",
+    "copy:pdf": "cpx latex-build/resume.pdf src/"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
   },
   "homepage": "https://andgate.github.io/resume",
   "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.0.1",
     "parcel": "^2.0.1"
   },
   "dependencies": {
+    "cpx": "^1.5.0",
     "marked": "^4.0.7"
   }
 }

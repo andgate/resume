@@ -1,5 +1,4 @@
 import { marked } from 'marked'
+import faq_txt from 'bundle-text:./faq.md'
 
-fetch(require('url:./faq.md'))
-  .then(res => res.text())
-  .then(txt => document.getElementById('resume-faq-section').innerHTML = marked(txt))
+document.getElementById('resume-faq-section').innerHTML = marked(faq_txt)
