@@ -7,7 +7,7 @@
     "start": "parcel src/index.html --dist-dir docs --no-source-maps",
     "build": "pnpm run copy:pdf && parcel build src/index.html --dist-dir docs --no-source-maps --public-url \"https://andgate.github.io/resume/\"",
     "copy:pdf": "cpx latex-build/*.pdf src/",
-    "clean": "rimraf src/resume.pdf latex-build/ docs/"
+    "clean": "rimraf src/gabriel-anderson_resume.pdf latex-build/ docs/"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,10 @@
   },
   "homepage": "https://andgate.github.io/resume",
   "devDependencies": {
-    "@parcel/transformer-inline-string": "^2.0.1",
-    "parcel": "^2.0.1",
-    "rimraf": "^3.0.2"
+    "@parcel/core": "^2.8.3",
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "parcel": "^2.8.3",
+    "rimraf": "^4.1.2"
   },
   "dependencies": {
     "cpx": "^1.5.0"
